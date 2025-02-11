@@ -1,35 +1,4 @@
 var app = angular.module("transflower", []);
-app.controller("loginController", function($scope) {
-    $scope.user = {
-        email: "akash@gmail.com",
-        password: "admin"
-    }
-    $scope.users=[
-        {
-            email: "akash@gmail.com",
-            password: "admin"
-        },
-        {
-            email: "test@gmail.com",
-            password: "admin"
-        },
-        {
-            email: "john@gmail.com",
-            password: "admin"
-        },
-        {
-            email: "user@gmail.com",
-            password: "admin"
-        }
-    ];
-    $scope.onValidate = () => {
-        if($scope.user){
-            console.log("Welcome");
-        } else {
-            console.log("Invalid User!");
-        }
-    }
-})
 app.controller("ProductController", function($scope) {
     $scope.products = [
         {
@@ -68,11 +37,4 @@ app.controller("ProductController", function($scope) {
             image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjosAWNON6L1dx6Et5OG2Qp76NLVgCwteurQ&s"
         }
     ]
-    // $scope.onValidate = () => {
-    //     if($scope.user){
-    //         console.log("Welcome");
-    //     } else {
-    //         console.log("Invalid User!");
-    //     }
-    // }
 })
