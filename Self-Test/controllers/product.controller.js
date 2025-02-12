@@ -1,4 +1,4 @@
-productModule.controller("ProductController", function($scope) {
+app.controller("ProductController", function($scope) {
     $scope.products = [
         {
             name:"Iphone 15",
